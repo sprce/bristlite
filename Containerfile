@@ -49,7 +49,7 @@ rpm-ostree install 						\
 	kde-partitionmanager 				\
 	polkit-kde-agent-1 	 				\
 	filelight		  					\
-	pacman &&							\
+	pacman								\
 
 
 ### LINTING
