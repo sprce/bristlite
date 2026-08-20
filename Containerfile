@@ -32,24 +32,20 @@ RUN rm /opt && mkdir /opt
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
-    --mount=type=cache,dst=/var/cache 				\
-    --mount=type=cache,dst=/var/log 				\
-    --mount=type=tmpfs,dst=/tmp 					\
-    /ctx/build.sh && 					\
-rpm-ostree override remove				\
-	bazaar 								\
-	gnome-disk-utility && 				\
-rpm-ostree install 						\
-	plasma-discover 					\
-		plasma-discover-rpm-ostree 		\
-		plasma-discover-kns				\
-		plasma-discover-libs			\
-		plasma-discover-notifier		\
-		plasma-discover-offline-updates \
-	kde-partitionmanager 				\
-	polkit-kde-agent-1 	 				\
-	filelight		  					\
-	pacman								\
+    --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/tmp \
+    /ctx/build.sh && \
+rpm-ostree override remove \
+	bazaar \
+	gnome-disk-utility && \
+rpm-ostree install \
+	polkit-kde-agent-1 \
+	plasma-discover \
+	plasma-discover-rpm-ostree \
+	plasma-discover-libs \
+	kde-partitionmanager \
+	filelight \
 
 
 ### LINTING
