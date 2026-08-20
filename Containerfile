@@ -44,8 +44,13 @@ rpm-ostree install \
 	plasma-discover \
 	plasma-discover-rpm-ostree \
 	plasma-discover-libs \
+	plasma-discover-flatpak \
+	plasma-discover-kns \
+	plasma-discover-offline-updates \
+	plasma-discover-notifier \
 	kde-partitionmanager \
 	filelight \
+	pacman
 
 
 ### LINTING
