@@ -40,6 +40,12 @@ rpm-ostree override remove \
 	bazaar \
 	gnome-disk-utility && \
 rpm-ostree install \
+	pkgconfig \
+	libGLEW \
+	libjpeg-turbo \
+	SDL2_image.x86_64 \
+	ckb-next \
+
 	polkit-kde-agent-1 \
 	plasma-discover \
 	plasma-discover-rpm-ostree \
@@ -49,8 +55,7 @@ rpm-ostree install \
 	plasma-discover-offline-updates \
 	plasma-discover-notifier \
 	kde-partitionmanager \
-	filelight \
-	pacman
+	filelight
 
 
 ### LINTING
