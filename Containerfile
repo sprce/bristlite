@@ -37,25 +37,38 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh && \
 rpm-ostree override remove \
+	nano \
 	bazaar \
 	gnome-disk-utility && \
 rpm-ostree install \
+	gcc \
+	make \
+	micro \
 	pkgconfig \
+	appstream-data \
+	appstream-compose \
+	appstream-generator \
+
+	libvrt \
+	qemu-kvm \
+	podman \
+	podman-compose \
+
 	libGLEW \
 	libjpeg-turbo \
 	SDL2_image.x86_64 \
-	ckb-next \
 
 	polkit-kde-agent-1 \
 	plasma-discover \
-	plasma-discover-rpm-ostree \
 	plasma-discover-libs \
 	plasma-discover-flatpak \
+	plasma-discover-packagekit \
 	plasma-discover-kns \
 	plasma-discover-offline-updates \
 	plasma-discover-notifier \
 	kde-partitionmanager \
-	filelight
+	filelight \
+	ckb-next
 
 
 ### LINTING
