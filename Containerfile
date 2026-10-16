@@ -35,11 +35,11 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /ctx/build.sh && \
+    /ctx/build.sh &&
 rpm-ostree override remove \
 	nano \
 	bazaar \
-	gnome-disk-utility && \
+	gnome-disk-utility &&
 rpm-ostree install \
 	gcc \
 	make \
@@ -49,7 +49,7 @@ rpm-ostree install \
 	appstream-compose \
 	appstream-generator \
 
-	libvrt \
+	libvirt \
 	qemu-kvm \
 	podman \
 	podman-compose \
