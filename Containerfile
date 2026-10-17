@@ -35,7 +35,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /ctx/build.sh
+    /ctx/build.sh && \
 rpm-ostree override remove \
 	nano \
 	bazaar \
@@ -48,16 +48,13 @@ rpm-ostree install \
 	appstream-data \
 	appstream-compose \
 	appstream-generator \
-
 	libvirt \
 	qemu-kvm \
 	podman \
 	podman-compose \
-
 	libGLEW \
 	libjpeg-turbo \
 	SDL2_image.x86_64 \
-
 	polkit-kde-agent-1 \
 	plasma-discover \
 	plasma-discover-libs \
