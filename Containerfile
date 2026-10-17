@@ -39,7 +39,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 rpm-ostree override remove \
 	nano \
 	bazaar \
-	gnome-disk-utility &&
+	gnome-disk-utility && \
 rpm-ostree install \
 	gcc \
 	make \
