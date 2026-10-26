@@ -57,8 +57,7 @@ rpm-ostree install \
 	plasma-discover-offline-updates \
 	plasma-discover-notifier \
 	kde-partitionmanager \
-	filelight \
-	ckb-next
+	filelight
 
 
 ### LINTING
