@@ -42,8 +42,6 @@ rpm-ostree override remove \
 rpm-ostree install \
 	micro \
 	pkgconfig \
-	appstream-data \
-	appstream-compose \
 	libvirt \
 	qemu-kvm \
 	podman \
@@ -52,10 +50,8 @@ rpm-ostree install \
 	plasma-discover \
 	plasma-discover-libs \
 	plasma-discover-flatpak \
-	plasma-discover-packagekit \
-	plasma-discover-kns \
-	plasma-discover-offline-updates \
 	plasma-discover-notifier \
+	plasma-discover-kns \
 	kde-partitionmanager \
 	filelight
 
