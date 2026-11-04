@@ -36,24 +36,10 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh && \
-rpm-ostree override remove \
-	bazaar \
-	gnome-disk-utility && \
-rpm-ostree install \
-	micro \
-	pkgconfig \
-	libvirt \
-	qemu-kvm \
-	podman \
-	podman-compose \
-	polkit-kde-agent-1 \
-	plasma-discover \
-	plasma-discover-libs \
-	plasma-discover-flatpak \
-	plasma-discover-notifier \
-	plasma-discover-kns \
-	kde-partitionmanager \
-	filelight
+    dnf5 -y remove bazaar gnome-disk-utility && \
+    dnf5 -y install micro pkgconfig libvirt qemu-kvm podman podman-compose \
+      polkit-kde-agent-1 plasma-discover plasma-discover-libs plasma-discover-flatpak \
+      plasma-discover-notifier plasma-discover-kns kde-partitionmanager filelight
 
 
 ### LINTING
