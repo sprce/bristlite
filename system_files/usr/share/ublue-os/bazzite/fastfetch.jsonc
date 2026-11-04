@@ -21,9 +21,9 @@
             "type": "title",
             "key": " ",
             "color": {
-                "user": "light_blue",
-                "at": "white",
-                "host": "magenta"
+                "user": "white",
+                "at": "light_blue",
+                "host": "red"
             }
         },
         "break",
@@ -35,7 +35,11 @@
         {
             "type": "os",
             "key": " 󰣛",
-            "format": "{pretty-name}"
+            "format":"Bristlite"
+        },
+        {
+            "type": "logo",
+            "key": " 󰣛",
         },
         {
             "type": "kernel",
@@ -78,7 +82,7 @@
         },
         {
             "type": "gamepad",
-            "key": " 󰖺"
+            "key": " 🖱"
         },
         "break",
         {
@@ -96,10 +100,6 @@
         {
             "type": "terminal",
             "key": " "
-        },
-        {
-            "type": "packages",
-            "key": " 󰏖"
         },
         "break",
         {

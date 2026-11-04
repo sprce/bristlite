@@ -6,6 +6,6 @@
   "image-branch": "stable",
   "base-image-name": "kinoite",
   "fedora-version": "44",
-  "version": "44.20261026",
-  "version-pretty": "Stable (F44.20261026)"
+  "version": "45.20261104",
+  "version-pretty": "Stable (F45.20261104) "
 }
